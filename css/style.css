@@ -134,7 +134,7 @@
     color: #3b3b3b;
 }
 .exclusive-offer {
-    background: #000;
+    background: #1d1d1d;
     color: #fff;
     height: 1150px;
 }
@@ -221,15 +221,16 @@
 }
 .social-media div {
     padding: 10px 12px 10px 12px;
-    background: #151515;
+    background: #181818;
     border-radius: 50%;
+    border: 1px solid #5d5d5d;
 }
 .carousel {
-    margin: 50px 0px 200px 200px;
-    display: flex;
+    margin: 0px 0px 150px 200px;
+    /* display: flex;
     gap: 40px;
     overflow: hidden;
-    position: relative;
+    position: relative; */
 }
 .carousel .card .item .card-img {
     width: 22vw;
@@ -256,6 +257,35 @@
     text-align: center;
     line-height: 20px;
 }
+.carousel-items {
+    display: flex;
+    gap: 40px;
+    transition: transform 0.5s ease;
+}
+.carousel-wrapper {
+    display: flex;
+    overflow: hidden;
+}
+.carousel .prev {
+    position: relative;
+    right: 96px;
+    top: 224px;
+    color: #fff;
+    padding: 15px 20px 15px 20px;
+    background: #343434;
+    border-radius: 50%;
+    border: 0;
+}
+.carousel .next {
+    position: relative;
+    left: 1150px;
+    bottom: 210px;
+    color: #fff;
+    padding: 15px 20px 15px 20px;
+    background: #bdbcbc;
+    border-radius: 50%;
+    border: 0;
+}
 .offer {
     padding: 10px;
     display: flex;
@@ -278,14 +308,34 @@ ion-icon {
     cursor: pointer;
     z-index: 3;
     color: white;
-  }
-  
-  .button-backwards {
-  left: 30%;
+}
+
+.button-backwards {
+    left: 30%;
     top: 50%;
-  }
-  
-  .button-forward {
+}
+
+.button-forward {
     right: 30%;
     top: 50%;
-  }
+}
+.faded-card {
+    filter: brightness(0.6); /* Reduce brightness to 60% */
+    transition: filter 0.3s ease;
+}
+.carousel-indicators .indicator {
+    position: relative;
+    bottom: 120px;
+    left: 200px;
+    width: 120px;
+}
+.carousel-indicators {
+    display: flex;
+    gap: 2px;
+}
+.bright {
+    border-top: 3px solid #fbfafa;
+}
+.light {
+    border-top: 3px solid #787878;
+}
